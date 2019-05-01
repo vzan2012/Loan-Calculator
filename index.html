@@ -16,6 +16,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- Custom Styles  -->
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Loan Calculator</title>
   </head>
   <body class="bg-dark">
@@ -74,41 +77,58 @@
             <!-- Form Section - End -->
 
             <!-- Loader - Section - Start -->
-            <!-- <div id="loading"><img src="img/ajax-loader.gif" alt="Loader" /></div> -->
+            <div id="loading">
+              <img src="img/ajax-loader.gif" alt="Loader" />
+            </div>
             <!-- Loader - Section - End -->
 
             <!-- Results - Section - Start -->
             <div id="results" class="pt-4">
               <h5 class="text-center">Results</h5>
               <div class="form-group">
-                <input
-                  type="number"
-                  name=""
-                  id="monthly-payment"
-                  class="form-control"
-                  placeholder="Monthly Payment"
-                  disabled
-                />
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Monthly Payment</span>
+                  </div>
+                  <input
+                    type="number"
+                    name=""
+                    id="monthly-payment"
+                    class="form-control"
+                    placeholder="Monthly Payment"
+                    disabled
+                  />
+                </div>
               </div>
               <div class="form-group">
-                <input
-                  type="number"
-                  name=""
-                  id="total-payment"
-                  class="form-control"
-                  placeholder="Total Payment"
-                  disabled
-                />
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Total Payment</span>
+                  </div>
+                  <input
+                    type="number"
+                    name=""
+                    id="total-payment"
+                    class="form-control"
+                    placeholder="Total Payment"
+                    disabled
+                  />
+                </div>
               </div>
               <div class="form-group">
-                <input
-                  type="number"
-                  name=""
-                  id="total-interest"
-                  class="form-control"
-                  placeholder="Total Interest"
-                  disabled
-                />
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Total Interest</span>
+                  </div>
+                  <input
+                    type="number"
+                    name=""
+                    id="total-interest"
+                    class="form-control"
+                    placeholder="Total Interest"
+                    disabled
+                  />
+                </div>
               </div>
             </div>
 
@@ -138,6 +158,5 @@
 
     <!-- Custom - Scripts -->
     <script src="app.js"></script>
-
   </body>
 </html>
