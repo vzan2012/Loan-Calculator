@@ -5,4 +5,9 @@
   margin: 10px 0;
 }
 
+#loading,
+#results {
+  display: none;
+}
+
 /*** Custom - Styles - End ***/
